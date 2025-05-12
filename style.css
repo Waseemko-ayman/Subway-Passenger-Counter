@@ -15,7 +15,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 350px;
+  width: 400px;
 }
 
 h1 {
@@ -24,7 +24,6 @@ h1 {
 }
 
 button {
-  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   margin: 10px;
@@ -34,15 +33,21 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+#addPassenger,
+#save {
+  background-color: #4caf50;
+}
+
+button:hover,
+#save:hover {
   background-color: #45a049;
 }
 
-#resetCounter {
+#reset {
   background-color: #f44336;
 }
 
-#resetCounter:hover {
+#reset:hover {
   background-color: #e53935;
 }
 
