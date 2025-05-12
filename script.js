@@ -9,14 +9,17 @@ if (localStorage.getItem("counter")) {
   counter.innerHTML = count;
 }
 
-addPassenger.addEventListener("click", () => {
-  count++;
+function updateCounter() {
   counter.textContent = count;
   localStorage.setItem("counter", count);
+}
+
+addPassenger.addEventListener("click", () => {
+  count++;
+  updateCounter();
 })
 
 resetCounter.addEventListener("click", () => {
   count = 0;
-  counter.textContent = count;
-  localStorage.setItem("counter", count);
+  updateCounter();
 })
